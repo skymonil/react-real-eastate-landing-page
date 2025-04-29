@@ -18,7 +18,7 @@ const Header = () => {
         className="container text-white text-center px-6 mx-auto py-4 md:px-20 lg:px-32"
       >
         <h2 className="text-5xl sm:text-6xl md:text-[82px] max-w-3xl inline-block font-semibold pt-20 ">
-          Explore homes20 that fit your dreams
+          Explore homes that fit your dreams
         </h2>
         <div className="space-x-6 mt-16">
           <a href="#Projects" className="border border-white px-8 py-3 rounded">
