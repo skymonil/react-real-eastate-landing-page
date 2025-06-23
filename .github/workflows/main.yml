@@ -25,13 +25,15 @@ jobs:
       - name: Build frontend
         run: npm run build
 
-      - name: Deploy to S3
+      - name: Setup S3 cmd
         uses: s3-actions/s3cmd@v1.6.1
-        with:
+        env:
            provider: aws
            region: ap-south-1
            access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
            secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      - name: Deploy to S3
+        run: s3cmd sync ./dist/ s3://caam-bucket/ --delete-removed --acl-public
 
       - name: Invalidate CloudFront Cache (via CLI)
         run: |
