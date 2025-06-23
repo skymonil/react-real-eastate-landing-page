@@ -16,7 +16,7 @@ const About = () => {
         <span className="underline  decoration-1  font-light">Our Brand</span>
       </h1>
       <p className="text-gray-500 max-w-80 text-center mb-8">
-        Passionate About Properties11, Dedicated to Your Vision
+        Passionate About Properties12, Dedicated to Your Vision
       </p>
       <div className="flex flex-col md:flex-row items-center md:items-start md:gap-20">
         <img src={assets.brand_img} className="w-full sm:w-1/2 max-w-lg" />
